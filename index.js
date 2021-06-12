@@ -1,1 +1,15 @@
-// Your code here
+let activity
+function saturdayFun(activity="roller-skate"){
+    return `This Saturday, I want to ${activity}!`
+}
+
+function mondayWork(activity="go to the office"){
+    return `This Monday, I will ${activity}.`
+}
+
+function wrapAdjective(wrap="*"){  
+    return function (onlyYou = "special"){
+        return `You are ${wrap}${onlyYou}${wrap}!`;
+    }
+}
+wrapAdjective()();
